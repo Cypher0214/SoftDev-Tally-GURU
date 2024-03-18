@@ -1,0 +1,289 @@
+
+:root {
+    --primary-color: #ff0000; /* Change navbar color to red */
+    --secondary-color: #f8f9fa; /* Light grey for background */
+    --text-color: #ffffff; /* White text for better visibility */
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+/* Change the navbar color to red */
+
+/* Adjust hover color for navbar links to a slightly darker red */
+.navbar .nav-link:hover, .dropdown-item:hover {
+    background-color: #cc0000 !important; /* Darker shade of red for hover effects */
+}
+.navbar, .dropdown-menu {
+    background-color: #ff0000 ; /* Now uses red for the navbar */
+}
+
+.navbar .navbar-brand, .navbar .nav-link, .dropdown-item {
+    color: var(--text-color);
+}
+
+.navbar .nav-link:hover, .dropdown-item:hover {
+    background-color: #cc0000; /* Slightly darker shade of red for hover */
+}
+
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 48px; /* Adjusts the space between the logo and the text */
+}
+
+.navbar .navbar-brand img {
+ 
+    transition: height 0.3s ease; /* Smooth transition for logo resize */
+}
+
+.navbar-brand span {
+    font-weight: bold; /* Make the institute name stand out */
+}
+
+.navbar .container, .navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures the spacing is the same on both sides */
+}
+
+.navbar-nav {
+    margin-left: 0;
+}
+
+.navbar-nav .nav-item {
+    padding-right: 0.5rem; /* Space between nav items */
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        flex-grow: 1;
+        justify-content: flex-start; /* Aligns items to the left on smaller screens */
+    }
+
+    .navbar-toggler {
+        order: 2;
+        margin-left: auto; /* Ensures toggler is correctly positioned */
+    }
+
+    .navbar .navbar-brand {
+        gap: 10px; /* Adjusts gap for smaller screens */
+    }
+
+    .navbar .navbar-brand img {
+        height: 40px; /* Smaller logo size for less screen space */
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-bar a {
+        margin: 5px 0;
+    }
+}
+
+
+.top-bar {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+} 
+
+
+.banner-container {
+    width: 100%; /* Fill the width of its parent */
+    height: calc(498px * 0.6); /* Adjusted: If the original height is 498px, 40% reduction results in this height */
+    background-image: url('images/WhatsApp\ Image\ 2024-03-10\ at\ 11.01.38_b3360c0a.jpg'); /* Path to your image */
+    background-size: 100% auto; /* Ensures the entire image fits within the container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: block;
+}
+
+
+
+/* Custom styles for social media and form links */
+.top-bar a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+.carousel-item {
+    height: 500px; /* Fixed height for carousel */
+  }
+  
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover; /* This will cover the entire area, cropping the image if necessary */
+  }
+  .prospectus-section h2 {
+    font-weight: 600;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff; /* Matching the primary color theme */
+    border-radius: 50%;
+}
+
+.carousel-inner img {
+    transition: transform 0.5s ease; /* Smooth transition for images */
+}
+
+.carousel-item hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Optional: Customize the carousel indicators */
+.carousel-indicators li {
+    background-color: #007bff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Ensures that the carousel indicators are visible on lighter backgrounds */
+.carousel-indicators {
+    bottom: -35px;
+}
+  
+
+
+/* Responsive Top Bar Adjustments */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-bar a {
+        margin: 5px 0; /* Adjusted for consistent spacing around links */
+    }
+}
+
+/* Responsive Logo Size */
+
+
+#about-us {
+    background: lightcyan;
+    color: #ffffff;
+    padding: 60px 0;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#about-us h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#about-us p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.btn-outline-primary {
+    border-color: #ffffff;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ffffff;
+    color: #003366;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-icon {
+        margin-bottom: 30px;
+    }
+}
+.site-footer {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.site-footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 300px; /* Minimum width to prevent sections from becoming too narrow */
+    padding: 0 15px;
+}
+
+.quick-links-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.quick-links ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffffff; /* Adjust color as needed */
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer-bottom hr {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .site-footer .container {
+        flex-direction: column;
+    }
+    .quick-links-wrapper {
+        flex-direction: column;
+    }
+}
+
+.lead{
+
+    color: #6D8AAB;
+}

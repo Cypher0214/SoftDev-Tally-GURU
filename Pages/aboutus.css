@@ -1,0 +1,198 @@
+
+:root {
+    --primary-color: #003366; /* Dark blue */
+    --secondary-color: #f8f9fa; /* Light grey for background */
+    --text-color: #ffffff; /* White text for better visibility */
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.navbar, .dropdown-menu {
+    background-color: var(--primary-color);
+    /* align-items: first baseline; */
+}
+
+.navbar .navbar-brand, .navbar .nav-link, .dropdown-item {
+    color: var(--text-color);
+    /* align-items: flex-start; */
+}
+
+.navbar .nav-link:hover, .dropdown-item:hover {
+    background-color: #002244; /* Slightly lighter dark blue */
+}
+
+
+.top-bar {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+} 
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 200px; /* Adjust the height as per your requirement */
+    object-fit: cover;
+}
+
+/* Custom styles for social media and form links */
+.top-bar a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+.carousel-item {
+    height: 500px; /* Fixed height for carousel */
+  }
+  
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover; /* This will cover the entire area, cropping the image if necessary */
+  }
+  .prospectus-section h2 {
+    font-weight: 600;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff; /* Matching the primary color theme */
+    border-radius: 50%;
+}
+
+.carousel-inner img {
+    transition: transform 0.5s ease; /* Smooth transition for images */
+}
+
+.carousel-item hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Optional: Customize the carousel indicators */
+.carousel-indicators li {
+    background-color: #007bff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Ensures that the carousel indicators are visible on lighter backgrounds */
+.carousel-indicators {
+    bottom: -35px;
+}
+  
+@media (min-width: 992px) {
+    .navbar-expand-lg .container, .navbar-expand-lg .container-fluid {
+        display: flex;
+        justify-content: space-between; /* This helps in keeping the logo and navbar items aligned and closer */
+    }
+}
+
+/* Responsive Top Bar Adjustments */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-bar a {
+        margin: 5px 0; /* Adjusted for consistent spacing around links */
+    }
+}
+
+/* Responsive Logo Size */
+.navbar-brand img {
+    height: 60px; /* Default logo size */
+    transition: height 0.3s ease; /* Smooth transition for logo resize */
+}
+
+@media (max-width: 992px) { /* Adjust based on when the overlap occurs */
+    .navbar-brand img {
+        height: 40px; /* Smaller logo size for less screen space */
+    }
+}
+
+/* Ensuring navbar content is aligned properly */
+.navbar .container, .navbar .container-fluid {
+    display: flex;
+    align-items: center;
+}
+
+/* This will ensure navbar links stay on the left, near the logo */
+.navbar-nav {
+    margin-left: 0; /* Removes any default margin that might push nav items away from the logo */
+}
+
+/* Adjust spacing directly on nav items for better control */
+.navbar-nav .nav-item {
+    padding-right: 0.5rem; /* Adds some space between the nav items */
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        flex-grow: 1;
+        justify-content: flex-start; /* Aligns items to the left on smaller screens */
+    }
+    
+    /* Corrects the position of the navbar-toggler to ensure it does not overlap with nav items */
+    .navbar-toggler {
+        order: 2; /* Ensures toggler comes after the navbar brand/logo */
+        margin-left: auto; /* Pushes toggler to the end of the navbar */
+    }
+}
+
+.about-us {
+    background-color: #f8f9fa; /* Light background to make the text easily readable */
+    color: #003366; /* Dark text for contrast */
+    padding: 40px 0; /* Spacing around the content for better layout */
+}
+
+.about-us h2 {
+    text-align: center; /* Center the main title for emphasis */
+    color: #0056b3; /* A shade of blue that matches your primary color */
+    margin-bottom: 30px; /* Spacing below the title */
+}
+
+.about-us .content {
+    max-width: 800px; /* Optimal reading width */
+    margin: auto; /* Center the content block */
+    font-size: 16px; /* Readable text size */
+    line-height: 1.6; /* Adequate line spacing for readability */
+}
+
+.about-us h3 {
+    margin-top: 25px; /* Spacing above each subsection for clear separation */
+    color: #004080; /* Slightly darker shade for subsection titles */
+}
+
+
+.about-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.btn-outline-primary {
+    border-color: #ffffff;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ffffff;
+    color: #003366;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-icon {
+        margin-bottom: 30px;
+    }
+}
+
