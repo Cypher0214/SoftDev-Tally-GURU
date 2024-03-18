@@ -1,6 +1,6 @@
 
 :root {
-    --primary-color: #ff0000; /* Change navbar color to red */
+    --primary-color: darkred; /* Change navbar color to red */
     --secondary-color: #f8f9fa; /* Light grey for background */
     --text-color: #ffffff; /* White text for better visibility */
 }
@@ -16,7 +16,7 @@ body {
     background-color: #cc0000 !important; /* Darker shade of red for hover effects */
 }
 .navbar, .dropdown-menu {
-    background-color: #ff0000 ; /* Now uses red for the navbar */
+    background-color: darkred ; /* Now uses red for the navbar */
 }
 
 .navbar .navbar-brand, .navbar .nav-link, .dropdown-item {
@@ -97,7 +97,7 @@ body {
 .banner-container {
     width: 100%; /* Fill the width of its parent */
     height: calc(498px * 0.6); /* Adjusted: If the original height is 498px, 40% reduction results in this height */
-    background-image: url('images/WhatsApp\ Image\ 2024-03-10\ at\ 11.01.38_b3360c0a.jpg'); /* Path to your image */
+    background-image: url('images/logo.png'); /* Path to your image */
     background-size: 100% auto; /* Ensures the entire image fits within the container */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -217,7 +217,7 @@ body {
     }
 }
 .site-footer {
-    background-color: #003366;
+    background-color: darkred;
     color: #ffffff;
     padding: 20px;
     font-size: 14px;
