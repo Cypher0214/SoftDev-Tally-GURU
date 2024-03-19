@@ -8,6 +8,7 @@
 body {
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    scroll-behavior: smooth;
 }
 /* Change the navbar color to red */
 
@@ -171,51 +172,59 @@ body {
 
 /* Responsive Logo Size */
 
-
 #about-us {
-    background: lightcyan;
-    color: #ffffff;
-    padding: 60px 0;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background-color: #f8f9fa; /* Light grey background, matching Director's Message */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent shadow effect */
+    padding: 60px 0; /* Uniform padding */
+    border-radius: 15px; /* Rounded corners, same as Director's Message */
 }
 
 #about-us h2 {
-    color: #ffffff;
-    margin-bottom: 20px;
-    font-weight: 700;
+    color: darkred; /* Heading color matched with Director's Message */
+    font-weight: 700; /* Bold font weight for headings */
+    margin-bottom: 20px; /* Spacing after the heading */
 }
 
-#about-us p {
-    color: black;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+#about-us p, #about-us .lead {
+    color: #333; /* Dark text color for readability */
+    font-size: 16px; /* Standard text size */
+    line-height: 1.6; /* Line height for paragraph readability */
+    margin-bottom: 20px; /* Bottom margin for paragraph spacing */
+}
+
+#about-us .lead {
+    font-size: 1.2rem; /* Slightly larger font size for the lead paragraph, if present */
+}
+
+#about-us strong {
+    font-weight: 600; /* Weight for strong tags, slightly less bold than the heading */
 }
 
 .about-icon {
-    width: 100px;
-    height: auto;
-    margin-bottom: 20px;
+    width: 100px; /* Icon width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Margin below icons */
 }
 
 .btn-outline-primary {
-    border-color: #ffffff;
-    color: #ffffff;
-    transition: all 0.3s ease;
+    border-color: darkred; /* Border color to match the primary color scheme */
+    color: darkred; /* Text color for the button */
+    transition: all 0.3s ease; /* Transition for hover effects */
 }
 
 .btn-outline-primary:hover {
-    background-color: #ffffff;
-    color: #003366;
+    background-color: darkred; /* Button fill color on hover */
+    color: #ffffff; /* Text color on hover for contrast */
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments, if necessary */
 @media (max-width: 768px) {
     .about-icon {
-        margin-bottom: 30px;
+        margin-bottom: 30px; /* Increased bottom margin for icons on smaller screens */
     }
 }
+
+
 .site-footer {
     background-color: darkred;
     color: #ffffff;
@@ -286,4 +295,35 @@ body {
 .lead{
 
     color: #6D8AAB;
+}
+
+
+/* Common Styles for Both Sections */
+.section-text {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 60px 0;
+    border-radius: 15px;
+}
+
+.section-text h2 {
+    color: darkred; /* Corrected from 'dar' to 'darkred' */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section-text p {
+    color: #333; /* Assuming #333 for both sections for readability */
+    font-size: 16px; /* Standard paragraph font size */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.section-text .lead {
+    font-size: 1.2rem; /* Larger font size for lead/introductory paragraph */
+}
+
+/* Ensure strong tags have the intended emphasis */
+.section-text strong {
+    font-weight: 600;
 }
