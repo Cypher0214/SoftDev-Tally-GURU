@@ -53,7 +53,7 @@
                       <li><a class="dropdown-item" href="#director-message">Director's Message</a></li>
                       <li><a class="dropdown-item" href="#">Vision and Mission</a></li>
                       <li><a class="dropdown-item" href="#">Facilities</a></li>
-                      <li><a class="dropdown-item" href="#">Our Team</a></li>
+                      <li><a class="dropdown-item" href="/uconst.html">Our Team</a></li>
                   </ul>
               </li> 
               <!-- Courses Dropdown -->
@@ -153,6 +153,28 @@
   </button>
 </div>
 
+
+  <!-- Registration Modal -->
+  <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registrationModalLabel">Registration</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p style="text-align: center; font-size: 20px;">
+            <span class="blink_me">REGISTRATION OPEN</span>
+          </p>
+          <p style="text-align: center;">
+            <a href="link-to-your-registration-page.html" class="btn btn-success">Apply Now</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
 <!-- Director's Message Section -->
 <div id="director-message"class="director-message p-5" style="background-color: #f8f9fa; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
     <div class="container">
@@ -206,7 +228,7 @@
 <div class="prospectus-section py-5 bg-light">
     <div class="container">
         <!-- Section Title -->
-        <h2 class="text-center mb-5" style="font-size: 2.5rem; color: #0056b3;">Prospectus</h2>
+        <h2 class="text-center mb-5" style="font-size: 2.5rem; color: darkred">Prospectus</h2>
         <!-- Carousel -->
         <div id="prospectusCarousel" class="carousel slide shadow-lg" data-bs-ride="carousel" style="max-width: 600px; margin: 0 auto; border-radius: 15px; overflow: hidden;">
             <div class="carousel-inner">
@@ -286,38 +308,13 @@
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
 
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const bannerContainer = document.querySelector('.banner-container');
-    const bannerImg = document.querySelector('.banner-img');
-
-    function adjustBannerHeight() {
-        // Assume the original aspect ratio of the image is 1600:498
-        const originalWidth = 1600;
-        const originalHeight = 498;
-        const currentWidth = bannerImg.offsetWidth; // Get current width of the image
-        const scaleFactor = currentWidth / originalWidth; // Calculate scale factor based on current width
-        const adjustedHeight = originalHeight * scaleFactor * 0.6; // 40% height reduction
-
-        // Apply the adjusted height to the container
-        bannerContainer.style.height = `${adjustedHeight}px`;
-    }
-
-    window.addEventListener('resize', adjustBannerHeight); // Adjust height on window resize for responsiveness
-    adjustBannerHeight(); // Initial adjustment
-});
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var myModal = new bootstrap.Modal(document.getElementById('registrationModal'), {});
+        myModal.show();
+    });
+    </script>
+    
 </body>
 </html>

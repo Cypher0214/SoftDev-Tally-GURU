@@ -327,3 +327,56 @@ body {
 .section-text strong {
     font-weight: 600;
 }
+
+.about-us {
+    background-color: #f8f9fa; /* Light background to make the text easily readable */
+    color: #003366; /* Dark text for contrast */
+    padding: 40px 0; /* Spacing around the content for better layout */
+}
+
+.about-us h2 {
+    text-align: center; /* Center the main title for emphasis */
+    color: darkred; /* A shade of blue that matches your primary color */
+    margin-bottom: 30px; /* Spacing below the title */
+}
+
+.about-us .content {
+    max-width: 800px; /* Optimal reading width */
+    margin: auto; /* Center the content block */
+    font-size: 16px; /* Readable text size */
+    line-height: 1.6; /* Adequate line spacing for readability */
+}
+
+.about-us h3 {
+    margin-top: 25px; /* Spacing above each subsection for clear separation */
+    color: darkred; /* Slightly darker shade for subsection titles */
+}
+
+
+.about-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.btn-outline-primary {
+    border-color: #0c0808;
+    color: darkred;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ffffff;
+    color: #003366;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  
