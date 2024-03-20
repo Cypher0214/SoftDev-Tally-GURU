@@ -230,6 +230,7 @@ body {
     color: #ffffff;
     padding: 20px;
     font-size: 14px;
+    padding-top: 40px; 
 }
 
 .site-footer .container {
@@ -297,77 +298,64 @@ body {
     color: #6D8AAB;
 }
 
-
-/* Common Styles for Both Sections */
 .section-text {
     background-color: #f8f9fa;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 60px 0;
     border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Added */
 }
 
 .section-text h2 {
-    color: darkred; /* Corrected from 'dar' to 'darkred' */
+    color: darkred;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .section-text p {
-    color: #333; /* Assuming #333 for both sections for readability */
-    font-size: 16px; /* Standard paragraph font size */
+    color: #333;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.section-text .lead {
-    font-size: 1.2rem; /* Larger font size for lead/introductory paragraph */
+.vision-mission {
+    display: flex;
+    justify-content: space-around; /* Adjusts layout for vision and mission sections */
+    margin-top: 40px; /* Added */
 }
 
-/* Ensure strong tags have the intended emphasis */
-.section-text strong {
-    font-weight: 600;
+.vision-mission > div {
+    flex: 1; /* Ensures equal width */
+    margin: 0 20px; /* Adds spacing between vision and mission */
 }
 
-.about-us {
-    background-color: #f8f9fa; /* Light background to make the text easily readable */
-    color: #003366; /* Dark text for contrast */
-    padding: 40px 0; /* Spacing around the content for better layout */
-}
-
-.about-us h2 {
-    text-align: center; /* Center the main title for emphasis */
-    color: darkred; /* A shade of blue that matches your primary color */
-    margin-bottom: 30px; /* Spacing below the title */
+.vision h3, .mission h3 {
+    color: darkred;
+    margin-bottom: 15px;
 }
 
 .about-us .content {
-    max-width: 800px; /* Optimal reading width */
-    margin: auto; /* Center the content block */
-    font-size: 16px; /* Readable text size */
-    line-height: 1.6; /* Adequate line spacing for readability */
-}
-
-.about-us h3 {
-    margin-top: 25px; /* Spacing above each subsection for clear separation */
-    color: darkred; /* Slightly darker shade for subsection titles */
-}
-
-
-.about-icon {
-    width: 100px;
-    height: auto;
-    margin-bottom: 20px;
+    max-width: 900px; /* Increased */
+    margin: auto;
+    text-align: justify; /* Improves readability */
 }
 
 .btn-outline-primary {
-    border-color: #0c0808;
+    border-color: darkred;
     color: darkred;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
     transition: all 0.3s ease;
+    font-weight: 600; /* Added */
 }
 
 .btn-outline-primary:hover {
-    background-color: #ffffff;
-    color: #003366;
+    background-color: darkred;
+    color: #ffffff;
 }
 
 @keyframes blinker {
@@ -379,4 +367,68 @@ body {
   .blink_me {
     animation: blinker 1s linear infinite;
   }
-  
+ 
+
+.registration-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    margin-bottom: 3rem;
+}
+
+.registration-form h2 {
+    color: darkred;
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    margin-top: 10px;
+    display: block;
+    color: #003366;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="tel"],
+.registration-form input[type="email"],
+.registration-form input[type="date"],
+.registration-form select,
+.registration-form input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.registration-form .btn-primary {
+    background-color: darkred;
+    border-color: darkred;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.registration-form .btn-primary:hover {
+    background-color: #b30000;
+    border-color: #b30000;
+}
+
+.registration-form .declaration {
+    margin-top: 20px;
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
