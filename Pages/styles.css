@@ -432,3 +432,93 @@ body {
         opacity: 0;
     }
 }
+
+.custom-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ensure the carousel takes up the full width of its container */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto; /* This ensures that the slide doesn't grow or shrink but respects the width we give it */
+    width: 100%; /* Each slide should be the full width of the carousel */
+    align-items: center; /* Align items vertically */
+}
+
+.carousel-image {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 0 10px; /* Adjust spacing between images */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 0 0 auto; /* Prevent the image from growing or shrinking */
+}
+
+/* Add these styles to ensure the buttons are visible and positioned correctly */
+.carousel-btn {
+    z-index: 10;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Ensure this is adjusted so the entire track moves correctly */
+.carousel-track {
+    display: flex;
+    align-items: center; /* Add this to vertically center the carousel items if they are of varying heights */
+    transition: transform 0.5s ease;
+}
+
+.courses-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.courses-heading {
+    font-size: 2em;
+    color: darkred;
+    margin-bottom: 20px;
+}
+
+.courses-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+}
+
+.course {
+    flex: 0 0 auto;
+    width: 240px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.course img {
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.course h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.course:hover {
+    transform: scale(1.05);
+}
+
+.course:hover img {
+    opacity: 0.7;
+}
