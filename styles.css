@@ -10,6 +10,9 @@ body {
     color: var(--primary-color);
     scroll-behavior: smooth;
 }
+.navlogo{
+    height:120px;
+}
 /* Change the navbar color to red */
 
 /* Adjust hover color for navbar links to a slightly darker red */
@@ -96,12 +99,6 @@ body {
 
 
 .banner-container {
-    width: 100%; /* Fill the width of its parent */
-    height: calc(498px * 0.6); /* Adjusted: If the original height is 498px, 40% reduction results in this height */
-    background-image: url('images/logo.png'); /* Path to your image */
-    background-size: 100% auto; /* Ensures the entire image fits within the container */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
     display: block;
 }
 
@@ -117,9 +114,6 @@ body {
 .top-bar a:hover {
     text-decoration: underline;
 }
-.carousel-item {
-    height: 500px; /* Fixed height for carousel */
-  }
   
   .carousel-item img {
     height: 100%;
@@ -221,6 +215,11 @@ body {
 @media (max-width: 768px) {
     .about-icon {
         margin-bottom: 30px; /* Increased bottom margin for icons on smaller screens */
+    }
+}
+@media all and (max-width:438px){
+    .navlogo {
+        height:80px; /* Increased bottom margin for icons on smaller screens */
     }
 }
 
