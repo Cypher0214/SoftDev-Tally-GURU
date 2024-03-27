@@ -102,6 +102,76 @@ body {
     display: block;
 }
 
+/* General styles */
+.top-bar a, .top-bar button {
+    color: #fff; /* Adjust according to your color scheme */
+    transition: color 0.3s ease;
+}
+
+.top-bar a:hover, .top-bar button:hover {
+    color: #dddddd; /* Lighter shade for hover effect */
+}
+
+/* Custom button styles */
+.btn.custom-btn {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #fff; /* White border */
+    color: #fff; /* White text */
+    margin: 0 5px; /* Spacing between buttons */
+}
+
+.btn.custom-btn:hover {
+    background-color: #fff; /* White background on hover */
+    color: #000; /* Black text on hover */
+}
+
+/* Registration button with special effects */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background-color: #222; /* Adjust the background color */
+    color: rgb(37, 37, 37);
+    border-radius: 10rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from anchor */
+}
+
+.button .hoverEffect {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    pointer-events: none; /* Ignore pointer events */
+}
+
+.button .hoverEffect div {
+    background: linear-gradient(90deg, rgba(222,0,75,1) 0%, rgba(191,70,255,1) 49%, rgba(0,212,255,1) 100%);
+    border-radius: 40rem;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    filter: blur(20px);
+    opacity: 0.6;
+    animation: effect 3s linear infinite;
+}
+
+@keyframes effect {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+}
 
 
 /* Custom styles for social media and form links */
